@@ -38,6 +38,11 @@ a {
   padding: 11px 41px;
 }
 
+button {
+  outline: none;
+  border: none;
+}
+
 /* style */
 .header {
   background-color: var(--bgColor);
@@ -88,4 +93,8 @@ a {
 }
 .header .btn-signup {
   width: 144px;
+}
+
+.hero {
+  padding: 56px 0;
 }
