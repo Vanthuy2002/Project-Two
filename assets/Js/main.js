@@ -1,13 +1,3 @@
-//srcoll menu
-let header = document.querySelector(".header.fixed");
-window.addEventListener("scroll", () => {
-  if (document.documentElement.scrollTop > 0) {
-    header.classList.add("active");
-  } else {
-    header.classList.remove("active");
-  }
-});
-
 //action button
 let btnLinks = document.querySelectorAll(".price-link");
 btnLinks.forEach((btn) => {
@@ -18,3 +8,42 @@ btnLinks.forEach((btn) => {
     btn.classList.add("action");
   });
 });
+
+let person = [
+  {
+    name: "Peter Patron",
+    img: "./assets/img/pexels-olena-neva-1021693.jpg",
+    job: "Student of Web Design",
+    qoutes: ` Not only does my resume look impressive—filled with the names
+    and logos of world-class institutions—but these certificates
+    also bring me closer to my career goals by validating the
+    skills I've learned`,
+  },
+];
+
+let feedback = document.querySelector(".feedback-list");
+
+function renderPerson(arr) {
+  let htmls = arr.map((item) => {
+    return `<div class="feedback-item">
+    <div class="info">
+      <img src="${item.img}" alt="avatar" />
+      <p class="title">${item.name}</p>
+      <p class="desc">${item.job}</p>
+      <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <div class="feedback-content">
+      <img src="./assets/img/qoutes.svg" alt="" class="blockqoutes" />
+      <blockquote>
+        ${item.qoutes}
+      </blockquote>
+    </div>
+  </div>`;
+  });
+  feedback.insertAdjacentHTML("beforeend", htmls.join(""));
+}
+renderPerson(person);
