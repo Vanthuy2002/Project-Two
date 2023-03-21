@@ -68,6 +68,10 @@ button {
   z-index: 2;
 }
 
+.slide {
+  transform: translateX(-100%);
+}
+
 .header .header-action,
 .header-action .nav {
   display: flex;
@@ -386,7 +390,7 @@ courses-price : margin = auto để nó luôn nằm trên cùng 1 hàng với nh
 
 /* feedback */
 .feedback {
-  margin: 135px 0 0;
+  margin: 135px 0;
   background-color: #2e2100;
 }
 
@@ -456,4 +460,66 @@ courses-price : margin = auto để nó luôn nằm trên cùng 1 hàng với nh
   font-size: 2.6rem;
   line-height: 1.5;
   color: #ffffff;
+}
+
+.features {
+  padding: 65px 0;
+}
+.features-body .images,
+.features-body {
+  display: flex;
+  align-items: center;
+}
+.features-body {
+  gap: 0 130px;
+}
+
+.features-body .images {
+  gap: 0 30px;
+  width: 48%;
+}
+
+.features-body .images img {
+  width: 270px;
+  height: 404px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.features .images img:first-child {
+  margin-top: 34px;
+}
+
+.features-body .features-heading {
+  font-family: "Sen";
+  font-size: 3.8rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.features-body .features-desc {
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--textColor);
+  margin-bottom: 16px;
+}
+
+.features-body .btn-cta {
+  margin-top: 32px;
+  background-color: var(--secondary);
+  padding: 11px 37px;
+  font-weight: 600;
+}
+
+/* features 2 */
+.features:last-child{
+  margin-top: 70px;
+}
+.features .features-body.reverse{
+  flex-direction: row-reverse;
+}
+.features-body.reverse .images img{
+  width: 407px;
+  margin-top: 0;
 }

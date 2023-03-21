@@ -19,6 +19,12 @@ let person = [
     also bring me closer to my career goals by validating the
     skills I've learned`,
   },
+  {
+    name: "Em Fukuda",
+    img: "./assets/img/pexels-photo-415829.webp",
+    job: "Student of Japanses",
+    qoutes: ` Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique iusto quaerat deserunt assumenda delectus sed suscipit esse? Modi reiciendis pariatur id eveniet quod. Nesciunt voluptatibus blanditiis enim hic, temporibus id?`,
+  },
 ];
 
 let feedback = document.querySelector(".feedback-list");
