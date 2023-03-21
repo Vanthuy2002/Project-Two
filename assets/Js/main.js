@@ -1,8 +1,9 @@
+new WOW().init();
 //action button
-let btnLinks = document.querySelectorAll(".price-link");
-btnLinks.forEach((btn) => {
+let btns = document.querySelectorAll(".btn");
+btns.forEach((btn) => {
   btn.addEventListener("click", () => {
-    btnLinks.forEach((item) => {
+    btns.forEach((item) => {
       item.classList.remove("action");
     });
     btn.classList.add("action");
