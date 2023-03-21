@@ -629,28 +629,28 @@ courses-price : margin = auto để nó luôn nằm trên cùng 1 hàng với nh
   padding-bottom: 14px;
   border-bottom: 1px solid #bfbcb3;
 }
-.row .column:not(:first-child) .footer-list{
+.row .column:not(:first-child) .footer-list {
   margin-top: 28px;
 }
-.column:not(:first-child) .footer-list a{
+.column:not(:first-child) .footer-list a {
   color: #bfbcb3;
-  padding: 12px 0;
+  padding-bottom: 12px;
   white-space: nowrap;
 }
 
-.column .footer-add{
+.column .footer-add {
   margin-bottom: 12px;
   font-size: 1.4rem;
   line-height: 1.8;
 }
-.column .footer-add strong{
-  color: #FFF;
+.column .footer-add strong {
+  color: #fff;
 }
-.column .footer-add:not(strong){
+.column .footer-add:not(strong) {
   color: #bfbcb3;
 }
 
-.row .column:first-child .footer-desc{
+.row .column:first-child .footer-desc {
   margin: 18px 0;
   font-size: 1.4rem;
   color: #bfbfbf;
@@ -658,14 +658,14 @@ courses-price : margin = auto để nó luôn nằm trên cùng 1 hàng với nh
   width: 267px;
 }
 
-.row .column:first-child .footer-list{
+.row .column:first-child .footer-list {
   display: flex;
-  gap : 0 18px;
+  gap: 0 18px;
 }
 
-.footer .footer-copy{
+.footer .footer-copy {
   margin-top: 38px;
-  padding: 28px 0 0 ;
+  padding: 28px 0 0;
   border-top: 1px solid #bfbcb3;
   text-align: center;
   color: #bfbcb3;
